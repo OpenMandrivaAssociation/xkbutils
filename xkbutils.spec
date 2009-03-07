@@ -1,6 +1,6 @@
 Name:		xkbutils
 Version:	1.0.1
-Release:	%mkrel 8
+Release:	%mkrel 9
 Summary:	X.Org X11 XKB utilities
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
