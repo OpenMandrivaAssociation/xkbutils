@@ -1,2 +1,4 @@
+removed_sources:
+  xkbutils-1.0.3.tar.bz2: e5a2619b9449f95e02b520b492de0575bc4551d6
 sources:
-  "xkbutils-1.0.3.tar.bz2": e5a2619b9449f95e02b520b492de0575bc4551d6
+  xkbutils-1.0.4.tar.bz2: b09aef7cc3853eb12dbda332f55adec3add4447b

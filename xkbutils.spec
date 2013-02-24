@@ -1,15 +1,14 @@
 Name:		xkbutils
-Version:	1.0.3
-Release:	%mkrel 3
+Version:	1.0.4
+Release:	1
 Summary:	X.Org X11 XKB utilities
 Group:		Development/X11
-Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
-BuildRoot:	%{_tmppath}/%{name}-root
 
-BuildRequires: libx11-devel >= 1.0.0
-BuildRequires: libxkbfile-devel >= 1.0.1
-BuildRequires: libxaw-devel >= 1.0.1
+BuildRequires: pkgconfig(x11)
+BuildRequires: pkgconfig(xkbfile)
+BuildRequires: pkgconfig(xaw7)
 BuildRequires: x11-util-macros >= 1.0.1
 
 %description
@@ -25,14 +24,9 @@ This package provides several XKB utilities for X.org.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/xkbbell
 %{_bindir}/xkbvleds
 %{_bindir}/xkbwatch
