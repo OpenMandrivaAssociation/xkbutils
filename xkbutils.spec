@@ -19,8 +19,7 @@ This package provides several XKB utilities for X.org.
 
 %build
 autoreconf -fi
-%configure	\	
-		--x-includes=%{_includedir} \
+%configure2_5x	--x-includes=%{_includedir} \
 		--x-libraries=%{_libdir}
 
 %make_build
