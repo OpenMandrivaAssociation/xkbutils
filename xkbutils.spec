@@ -1,9 +1,10 @@
 Name:		xkbutils
-Version:	1.0.5
-Release:	2
+Version:	1.0.6
+Release:	1
 Summary:	X.Org X11 XKB utilities
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
+Url:		https://gitlab.freedesktop.org/xorg/app/xkbutils
+Source0:	https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
 
 BuildRequires: pkgconfig(x11)
@@ -19,8 +20,8 @@ This package provides several XKB utilities for X.org.
 
 %build
 autoreconf -fi
-%configure2_5x	--x-includes=%{_includedir} \
-		--x-libraries=%{_libdir}
+%configure --x-includes=%{_includedir} \
+	   --x-libraries=%{_libdir}
 
 %make_build
 
