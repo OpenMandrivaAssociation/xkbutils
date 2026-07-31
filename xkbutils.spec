@@ -1,5 +1,5 @@
 Name:		xkbutils
-Version:	1.0.6
+Version:	1.0.7
 Release:	1
 Summary:	X.Org X11 XKB utilities
 Group:		Development/X11
